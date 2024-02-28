@@ -1,7 +1,7 @@
 "use client"
 import './style/TodosLists.css'
 import { ITodo } from '@/app/interface/ITodo'
-import React, { useEffect } from 'react'
+import React from 'react'
 
 interface IGetTodos {
 	todosList: ITodo[]
