@@ -22,7 +22,9 @@ export default function Home() {
 	useEffect(() => {
 		if (typeof window !== 'undefined'){
 		localStorage.setItem('todos', JSON.stringify(todosList))
-}}, [todosList])
+		}
+		return undefined
+}, [todosList])
 
   return (
 	<>

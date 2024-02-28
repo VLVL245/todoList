@@ -15,7 +15,7 @@ export default function InputSection({getTodoList}: IGetTodo) {
 		if (typeof window !== 'undefined'){
 		return JSON.parse(localStorage.getItem('todos') || "[]")
 		}
-		return []
+		return null
 })
 
 	function setValueInLocalStorage(e: React.KeyboardEvent): void {
