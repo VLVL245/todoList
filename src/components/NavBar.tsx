@@ -9,9 +9,6 @@ export default function NavBar(){
     <div className="nav-wrapper">
       <Link href="/" className="brand-logo">Logo</Link>
       <ul id="nav-mobile" className="right hide-on-med-and-down">
-        <li><Link href="/">Sass</Link></li>
-        <li><Link href="/">Components</Link></li>
-        <li><Link href="/">JavaScript</Link></li>
       </ul>
     </div>
   </nav>

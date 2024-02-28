@@ -12,8 +12,9 @@ export default function InputSection({getTodoList}: IGetTodo) {
 
 	const [title, setTitle] = useState<string>("")
 	const [locStor, setLocStor] = useState<ITodo[]>(() => {
+		if (typeof window !== 'undefined'){
 		return JSON.parse(localStorage.getItem('todos') || "[]")
-	})
+}})
 
 	function setValueInLocalStorage(e: React.KeyboardEvent): void {
 		if (e.key === "Enter") {
