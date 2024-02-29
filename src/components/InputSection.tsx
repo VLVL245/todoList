@@ -3,8 +3,9 @@
 import './style/InputSection.css'
 import React, { useState, useEffect } from "react"
 import { ITodo } from "@/app/interface/ITodo"
+import { type } from 'os'
 
-interface IGetTodo {
+type IGetTodo = {
 	getTodoList(todos: ITodo[]): void 
 }
 
