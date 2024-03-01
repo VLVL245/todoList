@@ -3,7 +3,7 @@ import './style/TodosLists.css'
 import { ITodo } from '@/app/interface/ITodo'
 import React from 'react'
 
-interface IGetTodos {
+type IGetTodos = {
 	todosList: ITodo[]
 	removeTodo(id: number): void
 }
